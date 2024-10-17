@@ -21,5 +21,8 @@ systemctl enable sddm
 # Set graphic instead of tty
 systemctl set-default graphical.target
 
+# Set default fedora bootscreen and rebild initrd
+plymouth-set-default-theme bgrt -R
+
 # Reboot system
 reboot
