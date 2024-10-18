@@ -1,7 +1,10 @@
 #!/bin/env bash
 
 # Basic Desktop
-dnf -y @"Fonts" in plasma-desktop plasma-desktop-doc plasma-browser-integration plasma-nm plasma-nm-l2tp plasma-nm-openconnect plasma-nm-openswan plasma-nm-openvpn plasma-nm-pptp plasma-nm-vpnc sddm sddm-breeze sddm-kcm breeze-gtk colord-kde gnome-keyring-pam glibc-all-langpacks kde-gtk-config kde-settings-pulseaudio kdegraphics-thumbnailers kdeplasma-addons kdnssd kwalletmanager NetworkManager-config-connectivity-fedora systemd-oomd-defaults kinfocenter plymouth-system-theme plasma-vault kscreen pam-kwallet
+dnf -y in plasma-desktop plasma-desktop-doc plasma-browser-integration plasma-nm plasma-nm-l2tp plasma-nm-openconnect plasma-nm-openswan plasma-nm-openvpn plasma-nm-pptp plasma-nm-vpnc sddm sddm-breeze sddm-kcm breeze-gtk colord-kde gnome-keyring-pam glibc-all-langpacks kde-gtk-config kde-settings-pulseaudio kdegraphics-thumbnailers kdeplasma-addons kdnssd kwalletmanager NetworkManager-config-connectivity-fedora systemd-oomd-defaults kinfocenter plymouth-system-theme plasma-vault kscreen pam-kwallet
+
+# Add multimedia codecs and fonts
+dnf -y group install Multimedia Fonts
 
 # Printer support
 # dnf in plasma-print-manager
