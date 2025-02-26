@@ -10,7 +10,13 @@ dnf -y in @multimedia @fonts
 # dnf in plasma-print-manager
 
 # Thunderbolt support
-# dnf in plasma-thunderbolt
+dnf in plasma-thunderbolt
+
+# Bluetooth support
+dnf in bluedevil
+
+# VM Software
+dnf in @virtualization
 
 # Base KDE Apps
 dnf -y in plasma-systemmonitor dolphin ark konsole5 kate arc plasma-discover plasma-discover-notifier gwenview spectacle filelight kalk
