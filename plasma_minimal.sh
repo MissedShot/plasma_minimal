@@ -3,6 +3,9 @@
 # Basic Desktop
 dnf -y in plasma-desktop plasma-desktop-doc plasma-browser-integration plasma-nm plasma-nm-l2tp plasma-nm-openconnect plasma-nm-openswan plasma-nm-openvpn plasma-nm-pptp plasma-nm-vpnc sddm sddm-breeze sddm-kcm breeze-gtk colord-kde gnome-keyring-pam glibc-all-langpacks kde-gtk-config kde-settings-pulseaudio kdegraphics-thumbnailers kdeplasma-addons kdnssd kwalletmanager NetworkManager-config-connectivity-fedora systemd-oomd-defaults kinfocenter plymouth-system-theme plasma-vault kscreen pam-kwallet kf6-baloo-file
 
+# Firewall config
+dnf -y in plasma-firewall
+
 # Add multimedia codecs and fonts
 dnf -y in @multimedia @fonts
 
@@ -10,13 +13,13 @@ dnf -y in @multimedia @fonts
 # dnf in plasma-print-manager
 
 # Thunderbolt support
-dnf in plasma-thunderbolt
+dnf -y in plasma-thunderbolt
 
 # Bluetooth support
-dnf in bluedevil
+dnf -y in bluedevil
 
 # VM Software
-dnf in @virtualization
+dnf -y in @virtualization
 
 # Base KDE Apps
 dnf -y in plasma-systemmonitor dolphin ark konsole5 kate arc plasma-discover plasma-discover-notifier gwenview spectacle filelight kalk
